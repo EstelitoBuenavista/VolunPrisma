@@ -1,0 +1,58 @@
+.Header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #74ad704d;
+}
+
+.left-side {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.left-child{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30px;
+  margin: auto;
+}
+
+#Header__logo {
+  height: 50px;
+  cursor: pointer;
+  margin: 5px; /* Add some margin between the logo and text */
+}
+
+.title{
+  margin: 0px 5px 0px 5px; /* Reset default margin */
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#Header__profile {
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    padding: 5px;
+  }
+  .Header__logo {
+    height: 50%; /* Adjusted height for responsiveness */
+  }
+  .left-side {
+    flex-direction: column; /* Display elements vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start on smaller screens */
+  }
+  h3 {
+    margin-top: 8px; /* Add some top margin for spacing */
+  }
+}

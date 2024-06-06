@@ -1,0 +1,65 @@
+.Points {
+  font-weight: extra;
+  margin-right: 10px;
+}
+
+.MinusButton,
+.PlusButton {
+  background-color: #477242;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 4px 2px;
+  margin-left: 1px;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+
+  width: 35px;
+  height: 35px;
+}
+
+.MinusButton span,
+.PlusButton span {
+  font-size: 64px;
+  display: block;
+}
+
+.MinusButton:hover,
+.PlusButton:hover {
+  background-color: #3e8e41;
+}
+
+.MinusButton:disabled,
+.PlusButton:disabled {
+  background-color: #aaa;
+  cursor: default;
+}
+
+.DeleteButton {
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 4px 2px;
+  margin-left: 1px;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+
+  width: 35px;
+  height: 35px;
+}
+
+.DeleteButton:hover {
+  background-color: #c49e9e;
+}

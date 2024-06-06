@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #477242;
+  --primary-alt: #477242;
+  --secondary: #fbbf16;
+  --secondary-alt: #7e8b0b;
+  --tertiary: #0e3c00;
+  --background: #f4fbf7;
+  --text: #0a0a0a;
+  --subtext: #ababab;
+  --text-on-dark: #edfaf0;
+  --text-on-dark-sub: #e2e7e3;
+  --surface: #f7fff9;
+  --white: #fff;
+  --outline: 0 0 4px rgba(0, 0, 0, 0.2);
+  --outline-hover: 0 0 12px rgba(0, 0, 0, 0.15);
+  --table-row-odd: #edfaf3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--background);
+}
+
+code {
+  font-family: 'Space Grotesk', sans-serif; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}

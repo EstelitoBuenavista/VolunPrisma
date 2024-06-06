@@ -1,0 +1,11 @@
+input[type="submit"] {
+    background-color: #477242;
+    color: #fff;
+    font-size: 18px;
+    width: 50%; /* Adjusted width for responsiveness */
+    height: 50px; /* Adjusted height for better visibility */
+    margin: 20px auto; /* Centered the button */
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }

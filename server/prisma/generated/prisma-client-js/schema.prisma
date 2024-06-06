@@ -1,0 +1,85 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated/prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root@127.0.0.1:3306/voluntally"
+}
+
+enum AttStatus {
+    absent
+    pending
+    approved
+}
+
+enum Status {
+    ongoing
+    upcoming
+    not_approved
+    completed
+}
+
+enum Program {
+    BSCS
+    BSIT
+    BSIS
+}
+
+enum Role {
+    admin
+    student
+}
+
+model users {
+  user_id          Int           @id @default(autoincrement())
+  last_name       String        @unique
+  first_name        String         @unique
+  email       String @unique
+  password    String    
+  role       Role @default(student)
+  students students?
+  admins admins?
+}
+
+model students {
+    student_id Int @id @default(autoincrement())
+    user users @relation(fields: [user_id], references: [user_id])  
+    user_id     Int @unique
+    program Program @default(BSCS)
+    year Int 
+    events event_attendances[]
+
+}
+
+model admins {
+    admin_id Int @id @default(autoincrement())
+    user users @relation(fields: [user_id], references: [user_id])  
+    user_id     Int @unique
+}
+
+model events {
+    event_id Int @id @default(autoincrement())
+    status Status
+    event_title String 
+    event_desc String
+    event_loc String
+    event_date DateTime
+    no_of_reg Int @default(0)
+    no_of_att Int @default(0)
+    CES_points Int @default(0)
+    attendances event_attendances[]
+}
+
+model event_attendances {
+    att_id Int @id @default(autoincrement())
+    att_status AttStatus @default(pending)
+    students students @relation(fields: [student_id], references: [student_id])
+    student_id Int 
+    events events @relation(fields: [event_id], references: [event_id])
+    event_id Int
+}

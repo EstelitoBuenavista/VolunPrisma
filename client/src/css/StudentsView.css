@@ -1,0 +1,165 @@
+.StudentsView__heading {
+  margin-bottom: 24px;
+  font-size: 50px;
+  color: var(--primary);
+}
+
+.StudentsView__menu {
+  display: flex;
+  gap: 8px;
+}
+
+.StudentsView__menu button svg {
+  width: 24px;
+}
+
+.StudentsView__menu > .ButtonAdd {
+  margin-right: auto;
+}
+
+.Activity_Titles{
+  float: left;
+  text-align: left;
+  justify-content: left;
+  display: flex;
+
+  margin: 0px 10px 0px 10px;
+  width: 100%;
+}
+
+.Activity_Titles .Activity_Titles_EventTitle{
+  margin: 0px 20px 10px 0px;
+  align-self: flex-end;
+
+  color: var(--primary);
+  font-size: 400%;
+}
+
+.Activity_Titles .Activity_Points{
+  align-self: flex-end;
+  margin: 0px 20px 10px 0px;
+
+  color: #FBBF16;
+  font-size: 300%;
+}
+
+.Activity_Info{
+  display: flex;
+  margin: 5px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.Activity_Info .Details{
+  text-align: left;
+  justify-content: left;
+  text-decoration: underline;
+  display: flex;
+  margin: 10px;
+}
+
+.actcompleted{
+
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: right;
+  align-items: right;
+  margin: auto;
+}
+
+.Attendance .Attendance_Det {
+  justify-content: left;
+}
+
+.Att_Titles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1.Att_EventTitle,
+h1.Att_Points {
+  margin: 0;
+  font-size: 300%;
+  text-align: left;
+  flex: 1; /* This makes h1 elements share the available space equally */
+}
+
+h1.Att_EventTitle {
+  color: var(--primary);
+}
+
+h1.Att_Points {
+  color: var(--secondary);
+}
+
+  
+  .Table__header {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #477242;
+  ;
+    color: var(--surface);
+    padding: 8px 16px;
+    text-align: left;
+  }
+  
+  .Table tr:nth-child(2n) td {    
+    background-color: #4772422b;
+  
+  }
+  
+  .Table__data {
+    background-color: var(--white);
+    padding: 8px 4px;
+    padding-left: 16px;
+  }
+  
+  #activitiesTable tbody tr:hover {
+    cursor: pointer;
+  }
+
+
+  .Absent{
+    all: unset;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: var(--surface);
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 6px 24px;
+    cursor: pointer;
+}
+
+.Pending{
+    all: unset;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary);
+    color: var(--surface);
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 6px 24px;
+    cursor: pointer;
+}
+
+.Approved{
+    all: unset;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-alt);
+    color: var(--surface);
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 6px 24px;
+    cursor: pointer;
+}

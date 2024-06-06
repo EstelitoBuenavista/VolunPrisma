@@ -1,0 +1,78 @@
+/* General styles */
+article.EventCard {
+  position: relative;
+  background-color: #d8e9d6;
+  padding: max(16px, 3vw);
+  padding-left: calc(max(16px, 3vw) + 12px); /* Added comments for clarity */
+  border-radius: 8px;
+  box-shadow: var(--outline);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+  transition: all 100ms ease-in;
+  cursor: pointer;
+}
+
+.EventCard:hover {
+  box-shadow: var(--outline-hover);
+}
+
+/* Color border */
+.EventCard::before {
+  content: '';
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  background-color: #5b7a57;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* Title styles */
+h3 {
+  height: 20%; /* Adjusted fixed height for responsiveness */
+  margin-bottom: 8px;
+  font-size: 100%; /* Updated vw to correct unit */
+}
+
+/* Details section */
+.EventCard__detail {
+  display: flex;
+  align-items: center;
+  color: #55944E;
+  gap: 8px;
+  font-size: clamp(0.8rem, 1vw, 1.4rem); /* Updated vw to correct unit */
+}
+
+/* Icon styles */
+.EventCard__detail__icon {
+  max-width: 24px;
+  max-height: 24px;
+  color:  #659160;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .EventCard {
+    padding: 10px;
+    padding-left: calc(10px + 12px);
+  }
+
+  .EventCard__title {
+    height: auto;
+    font-size: 1.2rem;
+  }
+
+  .EventCard__detail {
+    font-size: 0.9rem;
+  }
+}

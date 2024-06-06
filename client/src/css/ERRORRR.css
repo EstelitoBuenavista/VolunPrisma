@@ -1,0 +1,30 @@
+
+.error-outline {
+    border: none !important;
+    background-color: rgb(170, 170, 170) !important;
+    color: #fff;
+    font-size: 18px;
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto 20px;
+    display: block;
+    text-align: center;
+  }
+.normal-outline {
+  border: none !important; 
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 18px;
+  width: 50%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px auto 20px;
+  display: block;
+  text-align: center;
+}
+  
